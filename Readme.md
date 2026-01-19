@@ -1,27 +1,19 @@
-# Maid Useful Tasks
-
-如果需要中文，请访问 [中文版](Readme_zh.md)
-
-An extension mod of TLM(Touhou Little Maid). Add some useful tasks to your Maid.
+# Maid RPG Task
 
 # Features
 
-## Logging
+## Tank
 
-The maid will cut down the logs around her and plant saplings. You can give the maid an axe and hoe or scissors to speed
-up the maid's ability to cut down trees and destroy leaves!
+protect allies have strong defence bigger health, can stun and provoke, have low damage and attack speed
 
-## Locate 
+## DPS
 
-The maid will search for a specified structure or the player's respawn point based on the item in her hand. If the maid is on the same vehicle as the player (currently only brooms are supported), the player can press a designated button (V by default) to give the maid control or partial control of the carrier.
+Damage dealer have big attack and faster attack speed if equip sword in second han deal bigger damage, have low health
 
-## Revive
+## Support
 
-Requires "Player Revive" mod.
+Support allies with buffs while debuffing enemy and revive player, support need XP level to use buffs and xp is spent over  time, cannot attack
 
-The Maid will revive nearby fallen players. If there is an undead totem in the Maid's bauble, the Maid will use one (The maid consumes a totem to skip your revive countdown, instead of just consuming the totem to not die like that in vanilla).
+## Master
 
-# More
-
-+ The Mod is currently in early development. Everything may change in the future.
-+ Some content maybe move to the TLM Mod in the future.
+All in one the Master Maid have the damage and attack speed of DPS, the health, defence, stun and provoke of tank and buff, debuff, revive player from support with no donwisdes, since it's too OP it is disabled as default in config.
