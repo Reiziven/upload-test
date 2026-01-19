@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import studio.fantasyit.maid_rpg_task.MaidRpgTask;
 import studio.fantasyit.maid_rpg_task.menu.MaidReviveConfigGui;
+import studio.fantasyit.maid_rpg_task.menu.MaidReviveConfigGui;
 
 @Mod.EventBusSubscriber(modid = MaidRpgTask.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientGuiRegistry {

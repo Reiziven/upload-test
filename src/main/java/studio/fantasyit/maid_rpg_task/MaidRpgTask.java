@@ -6,7 +6,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import studio.fantasyit.maid_rpg_task.registry.GuiRegistry;
-import studio.fantasyit.maid_rpg_task.registry.MemoryModuleRegistry;
 
 
 // The value here should match an entry in the META-INF/mods.toml file

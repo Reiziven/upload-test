@@ -68,24 +68,6 @@ public class MaidDPSTask implements IAttackTask {
     }
 
     @Override
-    public List<Pair<Integer, BehaviorControl<? super EntityMaid>>> createRideBrainTasks(EntityMaid maid) {
-        BehaviorControl<EntityMaid> supplementedTask = StartAttacking.create(this::hasAssaultWeapon, IAttackTask::findFirstValidAttackTarget);
-        BehaviorControl<EntityMaid> findTargetTask = StopAttackingIfTargetInvalid.create(target -> !hasAssaultWeapon(maid) || farAway(target, maid));
-        BehaviorControl<Mob> attackTargetTask = MeleeAttack.create(10);
-        MaidUseShieldTask maidUseShieldTask = new MaidUseShieldTask();
-        BehaviorControl<EntityMaid> dpsModifierTask = new DpsModifierBehavior();
-
-        return Lists.newArrayList(
-                Pair.of(5, supplementedTask),
-                Pair.of(5, findTargetTask),
-                Pair.of(5, attackTargetTask),
-                Pair.of(5, maidUseShieldTask),
-                Pair.of(3, dpsModifierTask),
-                Pair.of(5, new DpsModifierBehavior())
-        );
-    }
-
-    @Override
     public boolean hasExtraAttack(EntityMaid maid, Entity target) {
         return maid.getOffhandItem().is(InitItems.EXTINGUISHER.get()) && target.fireImmune();
     }

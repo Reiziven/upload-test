@@ -77,31 +77,6 @@ public class MaidTankTask implements IAttackTask {
     }
 
     @Override
-    public List<Pair<Integer, BehaviorControl<? super EntityMaid>>> createRideBrainTasks(EntityMaid maid) {
-        BehaviorControl<EntityMaid> supplementedTask =
-                StartAttacking.create(this::hasAssaultWeapon, IAttackTask::findFirstValidAttackTarget);
-        BehaviorControl<EntityMaid> findTargetTask =
-                StopAttackingIfTargetInvalid.create(target -> !hasAssaultWeapon(maid) || farAway(target, maid));
-        BehaviorControl<Mob> attackTargetTask = MeleeAttack.create(40);
-        MaidUseShieldTask maidUseShieldTask = new MaidUseShieldTask();
-        BehaviorControl<EntityMaid> TankAggroBehavior = new TankAggroBehavior();
-        BehaviorControl<EntityMaid> tankModifierTask = new TankModifierBehavior();
-        BehaviorControl<EntityMaid> tankRedirectTask = new TankRedirectBehavior();
-        BehaviorControl<EntityMaid> shieldBuffTask = new StunBehavior();
-
-        return Lists.newArrayList(
-                Pair.of(5, TankAggroBehavior),
-                Pair.of(5, supplementedTask),
-                Pair.of(5, findTargetTask),
-                Pair.of(5, attackTargetTask),
-                Pair.of(5, maidUseShieldTask),
-                Pair.of(3, tankModifierTask),
-                Pair.of(2, shieldBuffTask),
-                Pair.of(1, tankRedirectTask)
-        );
-    }
-
-    @Override
     public boolean hasExtraAttack(EntityMaid maid, Entity target) {
         return maid.getOffhandItem().is(InitItems.EXTINGUISHER.get()) && target.fireImmune();
     }
