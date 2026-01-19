@@ -1,26 +1,19 @@
-# Maid Useful Tasks
-
-For English version, visit [English Version](Readme.md)
-
-一个车万女仆的拓展模组，添加了一些实用的女仆任务。
+# Maid RPG Task
 
 # Features
 
-## Logging
+## Tank
 
-女仆会砍伐身边的原木并种下树苗。你可以给女仆斧头和锄头或剪刀来加速女仆砍树和破坏树叶的速度。
+protect allies have strong defence bigger health, can stun and provoke, have low damage and attack speed
 
-## Locate
+## DPS
 
-女仆会根据手上的物品寻找指定的结构或者玩家出生点。如果女仆和玩家在同一载具上（目前只支持扫帚），玩家可以按下指定按键（默认为V）来让女仆控制或部分控制载具。
+Damage dealer have big attack and faster attack speed if equip sword in second han deal bigger damage, have low health
 
-## Revive
+## Support
 
-需要`玩家救援`模组
+Support allies with buffs while debuffing enemy and revive player, support need XP level to use buffs and xp is spent over  time, cannot attack
 
-女仆会救援附近倒地的玩家。如果女仆饰品中有不死图腾，则女仆会使用一个。（女仆会消耗一个图腾来跳过你的复活倒计时，而不是像原版一样直接消耗图腾来不死）
+## Master
 
-# More
-
-+ 模组处于早期开发阶段，一切功能在未来都有可能变化。
-+ 模型的一些内容可能会直接合并到TLM中。
+All in one the Master Maid have the damage and attack speed of DPS, the health, defence, stun and provoke of tank and buff, debuff, revive player from support with no donwisdes, since it's too OP it is disabled as default in config.
